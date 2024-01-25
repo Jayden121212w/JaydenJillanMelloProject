@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("https://cdn.discordapp.com/attachments/1166445277046112276/1199716777140174899/mario-bg.jpg?ex=65c38e51&is=65b11951&hm=01ff8d419327c3507aae30198026b78134306759641b2bc41eba40fb54a2ca43&");
+    background-size: cover;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    /* background-color: green; */
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url("https://cdn.discordapp.com/attachments/1166445277046112276/1199716779522523146/soil.png?ex=65c38e51&is=65b11951&hm=bce3aa371c05f35c8104ef451df8b454d9c7bdee0060eaf84f4c4f90d1624ca4&");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div {
+    /* board = 540 x 540, divide into 3x3 tiles --> 180 x 180 per div */
+    width: 180px; 
+    height: 180px;
+    background-image: url("https://cdn.discordapp.com/attachments/1166445277046112276/1199716778746576926/pipe.png?ex=65c38e51&is=65b11951&hm=3223777d658ceac1112377db042bd28fbbcc6939ba7e5832f0b14c7f69a2dea7&");
+    background-size: cover;
+}
+
+#board div img {
+    /* all img tags inside tiles */
+    width: 100px;
+    height: 100px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
